@@ -1,0 +1,30 @@
+#
+# TECH GHP CHAT APPLICATION APPLICATION
+#
+
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Description: \
+	This is the TECH GHP CHAT APPLICATION bundle. It carries the configuration for an application \
+	and provides some basic very much application specific stuff.  It provides a button \
+	that calls a REST function that turns a text into upper case. \
+	\
+	${warning;Please update this Bundle-Description in tech.ghp.chat.application/bnd.bnd}
+
+Private-Package:  \
+	tech.ghp.chat.application
+
+EnRoute-Application: 	tech.ghp.chat
+JPM-Command:			chat
+
+-includeresource: \
+	{readme.md}, \
+	{configuration=configuration}, \
+	{static=static}, \
+	web=web
+
+-buildpath: \
+	osgi.enroute.base.api,\
+	tech.ghp.chat.api;version=latest
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12

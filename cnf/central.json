@@ -1,0 +1,9 @@
+{
+ "revisionRefs":[{
+  "artifactId":"log4j","baseline":"1.2.17","bsn":"log4j","created":1336303489100,"description":"Apache Log4j 1.2","groupId":"log4j","md5":"04A41F0A068986F0F73485CF507C0F40","name":"Apache Log4j","phase":"MASTER","revision":"5AF35056B4D257E4B64B9E8069C0746E8B08629F","size":489884,"urls":["http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"],"version":"1.2.17"
+ },{
+  "artifactId":"org.amdatu.remote.discovery.zookeeper","baseline":"0.1.2","bsn":"org.amdatu.remote.discovery.zookeeper","created":1440488771000,"errors":2,"groupId":"osgi","md5":"CBE6B0F50F4C8E27CE75C0C3A494B555","name":"Amdatu Remote - Discovery (Zookeeper)","phase":"MASTER","revision":"4C5FC6E1873DC388FE67B2373EA082E66227F10A","size":1258690,"urls":["http://repository.amdatu.org/release/org.amdatu.remote.discovery.zookeeper/org.amdatu.remote.discovery.zookeeper-0.1.2.jar"],"version":"0.1.2"
+ },{
+  "artifactId":"zookeeper","baseline":"3.3.6","bsn":"org.apache.hadoop.zookeeper","created":1343975496000,"groupId":"org.apache.zookeeper","md5":"A4425412297ADF88C157A263D61E2CF1","name":"ZooKeeper Bundle","phase":"MASTER","revision":"36825FF1595144D42D2F3A51F810EAEFDCF8CB79","size":608239,"urls":["http://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.3.6/zookeeper-3.3.6.jar"],"version":"3.3.6"
+ }]
+}

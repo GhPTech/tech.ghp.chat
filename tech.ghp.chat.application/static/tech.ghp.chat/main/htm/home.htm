@@ -1,0 +1,46 @@
+<section ng-cloak class="row">
+  
+  <div class="col-md-4 chat-user">
+    <p 
+      ng-repeat  ="u in chat.users"
+      ng-click  =chat.user=u
+      class    =entry
+      ng-class  ="{selected: u==chat.user}"
+    >
+      {{u}}
+    </p>        
+  </div>
+  
+  <div class=col-md-8>
+    <form class="form-inline">
+    
+      <div 
+        class=chat-history>
+        <div 
+          ng-repeat  ="m in chat.history"
+          class="message"
+          ng-class  ="{'ours': !m.from}">
+          <b 
+            ng-show  =m.from>
+            {{m.from}} :
+          </b>
+          {{m.text}}
+        </div> 
+      </div>
+      
+      <div class="form-group chat-input">
+         <button
+           class    ="btn btn-primary"
+           ng-click  =send(text)
+           ng-disabled  =!chat.user>
+            Send
+         </button>
+         <input 
+           type    ="text" 
+           class    ="form-control" 
+           placeholder  ="..."
+           ng-model  =text>
+        </div>
+      </form>
+  </div>
+</section>
