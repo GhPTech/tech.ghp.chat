@@ -26,5 +26,4 @@ Private-Package:  \
 -runrequires:  \
 	osgi.identity;filter:='(osgi.identity=tech.ghp.zookeeper.provider)'
 	
--runbundles: \
-	${error;Resolve first}
+

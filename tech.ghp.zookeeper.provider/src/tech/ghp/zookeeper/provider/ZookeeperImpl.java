@@ -23,7 +23,7 @@ public class ZookeeperImpl extends ZooKeeperServerMain {
 		File dir = context.getDataFile("zookeeper");
 		config = new ServerConfig();
 		config.parse(new String[] { "6789", dir.getAbsolutePath() });
-		thread = new Thread(this::zk, "osgi.enroute.examples.zookeeper");
+		thread = new Thread(this::zk, "tech.ghp.zookeeper");
 		thread.start();
 	}
 

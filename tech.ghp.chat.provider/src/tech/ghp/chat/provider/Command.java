@@ -9,10 +9,16 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
 import osgi.enroute.debug.api.Debug;
 import tech.ghp.chat.api.Chat;
 import tech.ghp.chat.api.Message;
+
+@ObjectClassDefinition
+@interface Configuration {
+String user_name() default "osgi";
+}
 
 @Component(
 	property = { 
